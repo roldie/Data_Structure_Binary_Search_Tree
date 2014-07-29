@@ -23,10 +23,10 @@ int main(int argc, const char * argv[])
     root->insertChild(root, 18);
     root->insertChild(root, 25);
     
-    BinarySearchTree *foundNode=root->searchChild(root, 2);
+    BinarySearchTree *foundNode=root->searchChild(root, 20);
     
     
-    root->deleteChild(root, 17);
+    root->deleteChild(root, 18);
     
     while (1);
     
