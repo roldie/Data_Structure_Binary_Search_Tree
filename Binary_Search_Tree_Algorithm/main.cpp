@@ -7,12 +7,29 @@
 //
 
 #include <iostream>
+#include "BinarySearchTree.h"
+
+using namespace std;
 
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    BinarySearchTree* root=new BinarySearchTree(17);
+    
+    root->insertChild(root, 9);
+    root->insertChild(root, 16);
+    
+    root->insertChild(root, 20);
+    root->insertChild(root, 18);
+    root->insertChild(root, 25);
+    
+    BinarySearchTree *foundNode=root->searchChild(root, 2);
+    
+    
+    root->deleteChild(root, 17);
+    
+    while (1);
+    
     return 0;
 }
 
